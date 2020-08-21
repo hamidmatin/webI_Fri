@@ -1,0 +1,86 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.row::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.mb-5{margin-bottom: 5px;}
+.mb-10{margin-bottom: 10px;}
+.mb-15{margin-bottom: 15px;}
+.mb-20{margin-bottom: 20px;}
+.mb-25{margin-bottom: 25px;}
+
+.mt-5{margin-top: 5px;}
+.mt-10{margin-top: 10px;}
+.mt-15{margin-top: 15px;}
+.mt-20{margin-top: 20px;}
+.mt-25{margin-top: 25px;}
+
+.text-center{text-align: center;}
+.text-left{text-align: left;}
+.text-right{text-align: right;}
+
+input, textarea, select, button{
+    outline: none;
+}
+.contact{
+    width: 700px;
+    margin: 100px auto;
+    border: 1px solid #f1f1f1;
+    box-shadow: 0 2px 4px #cccccc;
+    padding: 1em;
+}
+.contact .lable-control{
+    width: 20%;
+    float: left;
+    /* background-color: rgb(240, 187, 187); */
+}
+.contact .lable-control label{
+    display: block;
+    width: 100%;
+    padding: 6px;
+}
+.contact .form-control{
+    width: 80%;
+    float: left;
+    /* background-color: rgb(197, 248, 149); */
+}
+.contact .input-text{
+    display: block;
+    width: 100%;
+    padding: 6px;
+    border-radius: 5px;
+    border: 3px solid green;
+    resize: none;
+}
+.contact .input-text:focus{
+    box-shadow: 0 0 4px black;
+}
+.contact .send{
+    background-color: lightgreen;
+    color: darkgreen;
+    border: none;
+    padding: .5em 1em;
+    font-weight: bold;
+
+    /* display: block;
+    margin-left: auto;
+    margin-right: auto; */
+    cursor: pointer;
+    transition: all .3s;
+
+}
+.contact .send:hover, .contact .send:focus{
+    background-color: hsl(120, 63%, 45%);
+    color: white;
+}
+.contact .send.send:focus{
+    box-shadow: 0 0 4px black;
+}

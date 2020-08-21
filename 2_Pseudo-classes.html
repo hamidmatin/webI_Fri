@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            outline: none;
+        }
+        input:focus{
+            background-color: pink;
+            border: 5px solid green;
+        }
+        input:read-only{
+            color: darkslateblue;
+            font-size: 22px;
+        }
+        input:disabled{
+            background-color: #fff;
+            color: blueviolet;
+        }
+        input:required{
+            color: red;
+        }
+        input:checked{
+            width: 30px;
+            height: 30px;
+        }
+        input::placeholder{
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <input type="text" value="normal"/> <br>
+    <input type="text" readonly value="readonly"/> <br>
+    <input type="text" disabled value="diabled"/> <br>
+    <input type="text" required value="required"/> <br>
+    <input type="checkbox" /> <br>
+    <input type="checkbox" checked/> <br>
+    <input type="text" placeholder="normal"/> <br>
+</body>
+</html>
