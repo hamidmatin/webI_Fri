@@ -3,40 +3,121 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="lib/font-awesome/css/font-awesome.min.css" />
     <title>Document</title>
+    <style>
+      textarea {
+        font-size: 30px;
+        width: 400px;
+      }
+      option {
+        padding-left: 30px;
+        background: url("/images/smiley.gif") no-repeat 5px 5px;
+        background-size: 10px;
+      }
+      label {
+        color: red;
+        /* display: inline-block;
+        width: 120px;
+        cursor: pointer; */
+      }
+    </style>
   </head>
   <body>
     <input />
     <hr />
-    <form action="1_home_work.html" method="GET">
-      User Id: <input type="text" name="userid" required/> <br />
-      Password :<input type="password" name="password" placeholder="enter password"/>
+    <form action="" method="GET">
+      <label for="userid">User Id:</label
+      ><input type="text" name="userid" id="userid" required value="111" />
+      <br />
+      <label for="email">Password :</label
+      ><input type="password" name="password" placeholder="enter password" />
       <hr />
-      e-mail<input type="email" value="hamid.matin@gmail.com" name="email" readonly> <br>
-      date<input type="date" > <br>
-      number<input type="number" > <br>
-      color<input type="color" > <br>
-      file<input type="file" disabled> <br>
-      hidden<input type="hidden" > <br>
-      url<input type="url" > <br>
-      search<input type="search" > <br>
-      range<input type="range" > <br>
-      
-      
-      checkbox <br>
-      chk1<input type="checkbox" name="chk1" > 
-      chk2<input type="checkbox" name="chk2" > 
-      chk3<input type="checkbox" name="chk3" > <br>
+      e-mail<input
+        type="email"
+        value="hamid.matin@gmail.com"
+        name="email"
+        id="email"
+        readonly
+      />
+      <br />
+      date<input type="date" /> <br />
+      number<input type="number" /> <br />
+      color<input type="color" /> <br />
+      file<input type="file" disabled /> <br />
+      hidden<input type="hidden" /> <br />
+      url<input type="url" /> <br />
+      search<input type="search" /> <br />
+      range<input type="range" /> <br />
 
-      radio <br>
-      opt1<input type="radio" name="radio" value="opt1"> 
-      opt2<input type="radio" name="radio" value="op2"> 
-      opt2<input type="radio" name="radio" value="op3"> <br>
-      Gender <br>
-      Male<input type="radio" name="gender" value="0"> 
-      Female<input type="radio" name="gender" value="1"> <br>
+      checkbox <br />
+      <label for="chk1">chk1</label
+      ><input type="checkbox" name="chk1" id="chk1" />
+      <label for="chk2">chk2</label
+      ><input type="checkbox" name="chk2" id="chk2" checked />
+      <label>chk3 <input type="checkbox" name="chk3" /></label> <br />
 
-      <input type="submit" />
+      radio <br />
+      <label
+        >opt1
+        <input type="radio" name="radio" value="opt1" />
+      </label>
+      <label
+        >opt2<input type="radio" name="radio" value="opt2" checked />
+      </label>
+
+      opt2<input type="radio" name="radio" value="opt3" /> <br />
+      Gender <br />
+      Male<input type="radio" name="gender" value="0" /> Female<input
+        type="radio"
+        name="gender"
+        value="1"
+        checked
+      />
+      <br />
+
+      <hr />
+      <fieldset>
+        <legend>Select</legend>
+        Select
+        <select name="select" id="">
+          <option value="0">Option 1</option>
+          <option value="1" selected>Option 2</option>
+          <option value="2">Option 3</option>
+          <option value="3">Option 4</option>
+        </select>
+        <br />
+        Multiple Select<select name="multiple" id="" multiple>
+          <option value="0">Option 1</option>
+          <option value="1">Option 2</option>
+          <option value="2">Option 3</option>
+          <option value="3" selected>Option 4</option>
+        </select>
+        <br />
+        <label for="cars">Choose a car:</label>
+        <select name="cars" id="cars">
+          <optgroup label="Swedish Cars">
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+          </optgroup>
+          <optgroup label="German Cars">
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </optgroup>
+        </select>
+      </fieldset>
+
+      <br /><br />
+      Text Area <textarea name="textarea" id="" cols="10" rows="2"></textarea>
+      <hr />
+
+      <input type="submit" value="Send" />
+      <input type="reset" />
+      <input type="button" value="Button" /> <br />
+
+      <button type="submit"><i class="fa fa-send"></i>Send</button>
+      <button type="reset">Reset</button>
+      <button>Button</button>
     </form>
   </body>
 </html>
