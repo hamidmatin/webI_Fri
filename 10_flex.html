@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .flex-container {
+        display: flex;
+        background-color: DodgerBlue;
+        margin-bottom: 10px;
+      }
+      .flex-container > div {
+        background-color: #f1f1f1;
+        padding: 20px;
+        font-size: 30px;
+        border: 2px dashed;
+        width: 120px;
+        text-align: center;
+      }
+
+      .order-1{order: 1;}
+      .order-2{order: 2;}
+      .order-3{order: 3;}
+      .order-4{order: 4;}
+      .order-5{order: 5;}
+      .order-6{order: 16;}
+      
+      .grow-0{flex-grow: 0;}
+      .grow-1{flex-grow: 1;}
+      .grow-5{flex-grow: 5;}
+
+
+      .shrink-0{flex-shrink: 0;}
+      .shrink-3{flex-shrink: 3;}
+
+      .basis-200{flex-basis: 200px;}
+
+      .flex{flex: 0 0 300px;}
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="order-4">1</div>
+      <div class="order-6">2</div>
+      <div class="order-5">3</div>
+      <div class="order-3">4</div>
+      <div class="order-2">5</div>
+      <div class="order-1">6</div>
+    </div>
+    <div class="flex-container">
+      <div class="grow-5">1</div>
+      <div class="flex">2</div>
+      <div class="grow-1">3</div>
+      <div class="">4</div>
+      <div class="">5</div>
+      <div class="grow-1">6</div>
+    </div>
+    <div class="flex-container">
+      <div class="basis-200">1</div>
+      <div>2</div>
+      <div class="shrink-0 basis-200">3</div>
+      <div>4</div>
+      <div>5</div>
+      <div class="shrink-3">6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div class="shrink-0">13</div>
+    </div>
+  </body>
+</html>

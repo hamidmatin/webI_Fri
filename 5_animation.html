@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/animation.css">
+    <style>
+        .loading{
+            text-align: center;
+            margin-top: 100px;
+        }
+        .loading span{
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            background-color: green;
+            border-radius: 50%;
+            margin-right: 4px;
+            opacity: .5;
+            transform: scale(.5);
+
+        }
+        .loading span:nth-child(1){
+            animation: loading 1s 0s infinite linear
+        }
+        .loading span:nth-child(2){
+            animation: loading 1s .3s infinite linear
+        }
+        .loading span:nth-child(3){
+            animation: loading 1s .6s infinite linear
+        }
+
+        .spinner{
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 8px solid red;
+            border-bottom-color: transparent;
+            margin: 50px;
+            border-radius: 50%;
+
+            animation: spinner 1s infinite cubic-bezier(0.68, -0.55, 0.265, 1.55);
+        }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <span></span>
+        <span></span>
+        <span></span>
+        
+    </div>
+    
+    <div class="spinner"></div>
+</body>
+</html>

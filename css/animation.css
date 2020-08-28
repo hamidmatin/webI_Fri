@@ -1,0 +1,127 @@
+@keyframes my-anim1 {
+  from {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    left: 0;
+  }
+  to {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    left: 500px;
+  }
+}
+@keyframes my-anim2 {
+  0% {
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+    left: 0;
+  }
+  25% {
+    width: 300px;
+    height: 300px;
+    left: 0;
+    background-color: blue;
+  }
+  50% {
+    width: 300px;
+    height: 300px;
+    background-color: green;
+    left: 500px;
+  }
+  75% {
+    width: 50px;
+    height: 50px;
+    left: 500;
+    background-color: green;
+  }
+  100% {
+    width: 50px;
+    height: 50px;
+    background-color: yellow;
+    left: 1000px;
+  }
+}
+
+@keyframes my-anim3 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 500px;
+  }
+  50% {
+    top: 500px;
+    left: 500px;
+  }
+  75% {
+    top: 500px;
+    left: 0;
+  }
+  100% {
+    top: 0;
+    left: 0;
+  }
+}
+
+@keyframes my-anim4 {
+  0%, 100% {
+    top: 0;
+    left: 0;
+  }
+  10%, 40% {
+    top: 0;
+    left: 500px;
+  }
+  /* 40% {
+    top: 0;
+    left: 500px;
+  } */
+
+  50% {
+    top: 500px;
+    left: 500px;
+  }
+  75% {
+    top: 500px;
+    left: 0;
+  }
+  /* 100% {
+    top: 0;
+    left: 0;
+  } */
+  
+}
+
+
+@keyframes my-anim5{
+    /* 0%, 100%{
+        left: 0;
+    } */
+    40%,80%{
+        left: 600px;
+        background-color: yellow;
+    }
+    100%{
+        /* background-color: green; */
+    }
+}
+@keyframes loading{
+    /* 0%, 100%{
+        opacity: 0;
+        transform: scale(0);
+    } */
+    50%{
+        opacity: .5;
+        transform: scale(1);
+    }
+    
+}
+@keyframes spinner{
+    0%{transform: rotate(0);}
+    100%{transform: rotate(360deg);}
+}
