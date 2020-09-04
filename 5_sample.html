@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .layout{
+            display: grid;
+            grid-template-areas: "header header header header header header"
+                                 "nav nav nav nav nav nav "
+                                 "left main main main main right"
+                                 "footer footer footer footer footer footer";
+        }
+        .header{
+            grid-area: header;
+            background-color: #f1f1f1;
+            text-align: center;
+            height: 100px;
+        }
+        .footer{
+            grid-area: footer;
+            background-color: #71bdf0;
+            text-align: center;
+            height: 100px;
+        }
+        .nav{
+            grid-area: nav;
+            background-color: #414141;
+            text-align: center;
+            height: 40px;
+            color: white;
+        }
+        .content-left{
+            grid-area: left;
+            background-color: #acecd4;
+            text-align: center;
+            height: 400px;
+        }
+        .content-right{
+            grid-area: right;
+            background-color: #acecd4;
+            text-align: center;
+            height: 400px;
+        }
+        .main{
+            grid-area: main;
+            background-color: #d2acec;
+            text-align: center;
+            height: 400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="header">Header</div>
+        <div class="nav">Navigation Menu</div>
+        <div class="content-left">Content</div>
+        <div class="main">Main Content</div>
+        <div class="content-right">Content</div>
+        <div class="footer">Footer</div>
+    </div>
+</body>
+</html>
