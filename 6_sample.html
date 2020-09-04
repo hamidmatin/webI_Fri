@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+      }
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+      }
+      .container {
+        width: 1100px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+
+      .product {
+        width: 25%;
+        /* border: 1px solid; */
+        padding: 0.5em;
+        text-align: center;
+        font-family: 'Karla', sans-serif;
+      }
+      .product img {
+        display: block;
+        width: 100%;
+      }
+      .d-block{
+          display: block;
+      }
+      .text-center{
+          text-align: center;
+      }
+      .product .product-link{
+          color: red;
+          text-decoration: none;
+          display: inline-block;
+          margin-top: 8px;
+
+      }
+      .product .price{
+          display: block;          
+      }
+      .product .price.off{
+          text-decoration: line-through;
+      }
+      .product .btn-cart{
+        background-color: red;
+        color: white;
+        display: inline-block;
+        text-decoration: none;
+        padding: 1em 1.5em;
+        margin-top: 15px;
+        border-radius: 5px;
+        text-transform: uppercase;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="product">
+          <img src="images/woman-1477091_1920-255x320.jpg" alt="" />
+          <div >
+            <a href="#" class="product-link">Black Top</a>
+          </div>
+          <span class="price off">$35.00</span>
+          <a href="#" class="btn-cart">Add To cart</a>
+        </div>        
+        <div class="product">
+          <img src="images/girl-1286993_1920-255x320.jpg" alt="" />
+          <div >
+            <a href="#" class="product-link">Black Top</a>
+          </div>
+          <span class="price">$35.00</span>
+          <a href="#" class="btn-cart">Add To cart</a>
+        </div>        
+        <div class="product">
+          <img src="images/woman-1477091_1920-255x320.jpg" alt="" />
+          <div >
+            <a href="#" class="product-link">Black Top</a>
+          </div>
+          <span class="price">$35.00</span>
+          <a href="#" class="btn-cart">Add To cart</a>
+        </div>        
+      </div>
+    </div>
+  </body>
+</html>
